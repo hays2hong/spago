@@ -20,6 +20,20 @@ public class AllPipelineComponents {
 		}
 		return estimators;
 	}
+	
+	public static SpagoTransformer getTransformer(String name) {
+		if(transformers == null) {
+			build();
+		}
+		return transformers.get(name);
+	}
+
+	public static SpagoEstimator getEstimator(String name) {
+		if(estimators == null) {
+			build();
+		}
+		return estimators.get(name);
+	}
 
 	//将componts写成配置文件
 	private void toConf() {

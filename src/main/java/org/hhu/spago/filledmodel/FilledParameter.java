@@ -23,26 +23,26 @@ public class FilledParameter<T> {
 	}
 
 	
-	//检查用户输入值的合法性
-	public boolean validate(){
-		switch(desc.getType()) {
-		case ParameterType.STRING_TYPE : {
-			if((String)value != null && ((String)value).equals("")) {
-				return true;
-			}
-		}
-		case ParameterType.BOOLEAN_TYPE : {
-			
-		}
-		case ParameterType.DOUBLE_TYPE : {
-			
-		}
-		case ParameterType.INT_TYPE : {
-			
-		}
-		}
-		return false;	
-	}
+//	//检查用户输入值的合法性 在DTO方法里做好 这层就不管了
+//	public boolean validate(){
+//		switch(desc.getType()) {
+//		case ParameterType.STRING_TYPE : {
+//			if((String)value != null && ((String)value).equals("")) {
+//				return true;
+//			}
+//		}
+//		case ParameterType.BOOLEAN_TYPE : {
+//			
+//		}
+//		case ParameterType.DOUBLE_TYPE : {
+//			
+//		}
+//		case ParameterType.INT_TYPE : {
+//			
+//		}
+//		}
+//		return false;	
+//	}
 	
 	
 	public T getValue() {
